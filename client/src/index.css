@@ -16,7 +16,47 @@ body {
       monospace;
   }
 
-  .btn {
-    
+  .btn:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    box-shadow: 0px 5px 25px 15px #00bdff;
+  }
+  
+  h1 {
+    font-weight: bold;
+    font-family: Apple Chancery, cursive;
+  }
+
+  h4 {
+    font-family: Apple Chancery, cursive;
+  }
+
+  .navbar {
+    opacity:0.8;
+    background: linear-gradient(to top, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%, rgba(255,255,255,1) 10%);
+    font-family: Apple Chancery, cursive;
+  }
+
+  .heading, .favorites {
+    opacity:0.8;
+    width: 50%;
+    height: 140px;
+    margin: 80px auto;
+    background: linear-gradient(rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%, rgba(255,255,255,1) 10%);
+  }
+
+  .favoritesList, .searchResults {
+    opacity:0.9;
+    background: linear-gradient(rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%, rgba(255,255,255,1) 10%);
+  }
+
+  .searchContainer{
+    opacity:0.8;
+    width: 50%;
+    height: 170px;
+    margin: 80px auto;
+    background: linear-gradient(to top, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%, rgba(255,255,255,1) 10%);
+
   }
   

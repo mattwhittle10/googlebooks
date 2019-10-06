@@ -46,13 +46,13 @@ class Search extends Component {
         return (
             <Container>
                 <Row>
-                    <div className="col rounded text-center bg-info mt-4 p-4">
+                    <div className="heading col rounded text-center bg-info mt-4 p-4">
                         <h1>Welcome to the Book Cave</h1>
-                        <h4>Search for and save books that you would like to read</h4>
+                        <h4>Find a book, kick back, and enjoy!</h4>
                     </div>
                 </Row>
                 <Row>
-                    <div className="col rounded bg-light mb-4 mt-4 p-4">
+                    <div className="searchContainer rounded bg-info mt-0 p-4">
                         <form>
                             <div className="form-group">
                                 <label htmlFor="bookSearch"><h4>Book Search</h4></label>
@@ -69,7 +69,7 @@ class Search extends Component {
                     </div>
                 </Row>
                 <Row>
-                    <div className="col border border-rounded p-4">
+                    <div className="searchResults col border border-rounded p-4">
                         <h4>Results</h4>
                         {!this.state.books.length ? (
                             <h6 className="text-center">No books to display currently</h6>

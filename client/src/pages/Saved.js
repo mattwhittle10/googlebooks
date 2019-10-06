@@ -31,14 +31,13 @@ class Saved extends Component {
         return (
             <Container>
                 <Row>
-                    <div className="col rounded text-center bg-success mt-4 mb-4 p-4">
-                        <h1>Saved React Google Books</h1>
-                        <h4>Your Favorites</h4>
+                    <div className="favorites col rounded text-center bg-info mt-4 mb-4 p-4">
+                        <h1>Favorited Books</h1>
                     </div>
                 </Row>
                 <Row>
-                    <div className="col border border-rounded p-4">
-                        <h4>Saved Books</h4>
+                    <div className="favoritesList col border border-rounded p-4">
+                        <h4>Favorites</h4>
                         {!this.state.savedBooks.length ? (
                             <h6 className="text-center">No books to display currently</h6>
                         ) : (
