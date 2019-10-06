@@ -23,7 +23,7 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/googlebooks"
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    res.sendFile(path.join(__dirname, "./build/index.html"));
 });
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
