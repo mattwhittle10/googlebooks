@@ -5,10 +5,17 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: url("../src/backgroundImage7.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
+  }
+
+  .btn {
+    
   }
   

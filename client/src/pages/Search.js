@@ -47,16 +47,15 @@ class Search extends Component {
             <Container>
                 <Row>
                     <div className="col rounded text-center bg-info mt-4 p-4">
-                        <h1>React Google Books Search</h1>
-                        <h4>Search For and Save Books of Interest</h4>
+                        <h1>Welcome to the Book Cave</h1>
+                        <h4>Search for and save books that you would like to read</h4>
                     </div>
                 </Row>
                 <Row>
                     <div className="col rounded bg-light mb-4 mt-4 p-4">
-                        <h4>Book Search</h4>
                         <form>
                             <div className="form-group">
-                                <label htmlFor="bookSearch">Book</label>
+                                <label htmlFor="bookSearch"><h4>Book Search</h4></label>
                                 <input 
                                     type="text" 
                                     className="form-control" 
@@ -66,7 +65,6 @@ class Search extends Component {
                                     onChange={this.handleInputChange} />
                             </div>
                             <Button onClick={this.handleFormSubmit}>Search</Button>
-                            <img className="ml-3" src="https://books.google.com/googlebooks/images/poweredby.png" alt="Powered by Google" />
                         </form>
                     </div>
                 </Row>
