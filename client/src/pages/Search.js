@@ -46,31 +46,28 @@ class Search extends Component {
         return (
             <Container>
                 <Row>
-                    <div className="heading col rounded text-center bg-info mt-4 p-4">
+                    <div className="heading rounded text-center bg-info mt-4 p-4">
                         <h1>Welcome to the Book Cave</h1>
                         <h4>Find a book, kick back, and enjoy!</h4>
-                    </div>
-                </Row>
-                <Row>
-                    <div className="searchContainer rounded bg-info mt-0 p-4">
                         <form>
                             <div className="form-group">
-                                <label htmlFor="bookSearch"><h4>Book Search</h4></label>
+                                <label className="float-left" htmlFor="bookSearch"><h6>Book Search</h6></label>
                                 <input 
                                     type="text" 
                                     className="form-control" 
                                     id="bookSearch" 
                                     name="bookSearch" 
-                                    defaultValue="harrypotter"
                                     value={this.state.bookSearch} 
                                     onChange={this.handleInputChange} />
                             </div>
-                            <Button onClick={this.handleFormSubmit}>Search</Button>
-                        </form>
+                            <div className="float-right searchBtn">
+                                <Button onClick={this.handleFormSubmit}>Search</Button>
+                            </div>
+                        </form> 
                     </div>
                 </Row>
                 <Row>
-                    <div className="searchResults col border border-rounded p-4">
+                    <div className="searchResults col bg-info border border-rounded p-4">
                         <h4>Results</h4>
                         {!this.state.books.length ? (
                             <h6 className="text-center">No books to display currently</h6>
