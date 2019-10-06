@@ -8,7 +8,7 @@ class Search extends Component {
 
     state = {
         books: [],
-        bookSearch: "harrypotter"
+        bookSearch: ""
     };
 
     handleInputChange = event => {
@@ -61,6 +61,7 @@ class Search extends Component {
                                     className="form-control" 
                                     id="bookSearch" 
                                     name="bookSearch" 
+                                    defaultValue="harrypotter"
                                     value={this.state.bookSearch} 
                                     onChange={this.handleInputChange} />
                             </div>
