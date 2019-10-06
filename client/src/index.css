@@ -23,21 +23,21 @@ body {
     box-shadow: 0px 5px 25px 15px #6dd3f8;
   }
 
-  .savebtn {
+  .savebtn:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
         transform: scale(1.1);
     box-shadow: 0px 5px 25px 15px #e0eb4d;
   }
 
-  .viewbtn {
+  .viewbtn:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
         transform: scale(1.1);
     box-shadow: 0px 5px 25px 15px #6dd3f8;
   }
 
-  .deletebtn {
+  .deletebtn:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
         transform: scale(1.1);
