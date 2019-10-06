@@ -21,11 +21,11 @@ export function BookListItem({
     return (
         <li className="list-group-item">
             {!saved ? (
-            <button className="float-right btn btn-success" onClick={event => clickEvent(event, title, authors, description, href, thumbnail)}>Save</button>
+            <button className="float-right btn btn-info" onClick={event => clickEvent(event, title, authors, description, href, thumbnail)}>Save</button>
             ) : (
             <button className="float-right btn btn-danger" onClick={event => clickEvent(event, id)}>Delete</button>
             )}
-            <a className="float-right btn btn-primary ml-2 mr-2" href={href} target="_blank" rel="noopener noreferrer">View</a>
+            <a className="float-right btn btn-warning ml-2 mr-2" href={href} target="_blank" rel="noopener noreferrer">View</a>
             <h4>{title}</h4>
             <h5>by {authors.length > 1 ? (authors.reduce((prev, curr) => [prev, ", ", curr])) : authors[0]}</h5>
             <Row>

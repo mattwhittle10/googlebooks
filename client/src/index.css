@@ -38,6 +38,10 @@ body {
     font-family: Apple Chancery, cursive;
   }
 
+  .navbar-brand {
+    font-size: 180%;
+  }
+
   .heading, .favorites {
     opacity:0.8;
     width: 50%;
