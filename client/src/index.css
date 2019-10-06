@@ -8,6 +8,7 @@ body {
     background-image: url("../src/backgroundImage7.gif");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   code {
