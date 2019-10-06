@@ -8,7 +8,7 @@ class Search extends Component {
 
     state = {
         books: [],
-        bookSearch: ""
+        bookSearch: "harrypotter"
     };
 
     handleInputChange = event => {
