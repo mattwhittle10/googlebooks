@@ -2,6 +2,13 @@ const axios = require("axios");
 const router = require("express").Router();
 const booksController = require("../controllers/booksController");
 
+router.get("/", (req, res) => {
+    axios
+        .get("https://www.googleapis.com/books/v1/volumes?q=quilting")
+        .then(({ data: { items } }) => res.json(items))
+        .catch(err => res.status(422).json(err));
+})
+
 router.get("/books", (req, res) => {
     axios
         .get("https://www.googleapis.com/books/v1/volumes", { params: req.query })
